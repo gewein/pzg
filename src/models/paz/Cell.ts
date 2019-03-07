@@ -49,10 +49,11 @@ export default class Cell {
 }
 
 export enum CellType {
-  A,
-  B,
-  C,
-  D,
+  Close,
+  Range,
+  Support,
+  Defence,
+  Special,
   Effect,
   EracedTemp
 }

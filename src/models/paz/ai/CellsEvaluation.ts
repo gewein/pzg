@@ -1,5 +1,5 @@
-import Cells from '@/models/cells';
-import Cell, { CellType } from '@/models/cell';
+import Cells from '@/models/paz/Cells';
+import Cell, { CellType } from '@/models/paz/Cell';
 import Enumerable, { IEnumerable } from 'linq';
 
 export default class {

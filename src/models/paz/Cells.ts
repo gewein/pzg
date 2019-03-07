@@ -1,4 +1,4 @@
-import Cell, { CellType } from '@/models/cell';
+import Cell, { CellType } from '@/models/paz/Cell';
 import Enumerable, { IEnumerable } from 'linq';
 
 export default class Cells {
@@ -20,7 +20,7 @@ export default class Cells {
         const cell = new Cell(
           r,
           c,
-          Math.floor(Math.random() * 4),
+          this.generateCellType(),
           (isMine = !isMine)
         );
         this.items.push(cell);
@@ -63,7 +63,7 @@ export default class Cells {
         if (this.findCellMap.has(r * 1000 + c) === false) {
           eraced[index].row = r - this.rows;
           eraced[index].col = c;
-          eraced[index].type = Math.floor(Math.random() * 4) as CellType;
+          eraced[index].type = this.generateCellType();
           eraced[index].isMine = eracedByMe;
           index++;
         }
@@ -166,5 +166,9 @@ export default class Cells {
         this.findCellMap.set(cell.key, cell);
       }
     });
+  }
+
+  private generateCellType() {
+    return Math.floor(Math.random() * 5) as CellType;
   }
 }

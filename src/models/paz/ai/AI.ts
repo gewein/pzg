@@ -1,5 +1,5 @@
-import Cells from '@/models/cells';
-import cellsEvaluation from '@/models/cellsEvaluation';
+import Cells from '@/models/paz/Cells';
+import cellsEvaluation from '@/models/paz/ai/CellsEvaluation';
 import Enumerable, { IEnumerable } from 'linq';
 
 class AI {
