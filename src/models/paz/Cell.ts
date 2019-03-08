@@ -49,9 +49,9 @@ export default class Cell {
 }
 
 export enum CellType {
-  Close,
+  Melee,
   Range,
-  Support,
+  Counter,
   Defence,
   Special,
   Effect,

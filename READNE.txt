@@ -1,0 +1,9 @@
+JSONを型付きで読み込む場合、  tsconfig.jsonの"resolveJsonModule": true,でもできるが、
+構造が深くなると型宣言が面倒なので、master.tsとd.tsを使って宣言することにした。
+
+ちなみにresolveJsonModuleを有効化する場合、jsonにtsのフォーマッターが適用されてwarningが出まくる
+tslint.jsonに
+    "linterOptions": {
+      "exclude": [ "**/*.json"]
+    },
+を追加する

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "name": "sample1",
+    "life": 30,
+    "skills": [
+      { "type": 0, "name": "type0Skill", "count": 5, "effect": "" },
+      { "type": 1, "name": "type1Skill", "count": 5, "effect": "" }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "sample2",
+    "life": 10,
+    "skills": [
+      { "type": 2, "name": "type2Skill", "count": 10, "effect": "" },
+      { "type": 3, "name": "type3Skill", "count": 20, "effect": "" }
+    ]
+  }
+]

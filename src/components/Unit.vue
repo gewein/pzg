@@ -21,7 +21,7 @@ export default class extends Vue {
     return this.layout.containerSize - 10;
   }
   private get lifeWidth() {
-    return this.game.unit.life / this.game.unit.maxLife * this.width;
+    return this.game.unit.life / this.game.unit.lifeMax * this.width;
   }
 }
 </script>
